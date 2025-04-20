@@ -1,0 +1,53 @@
+import { motion } from "framer-motion";
+import { pageTransition, fadeIn, slideUp } from "@/lib/animations";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
+
+const Contact = () => {
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={pageTransition}
+    >
+      <section 
+        className="relative pt-32 pb-16 md:pt-40 md:pb-24"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1612831455175-e57c06bb0c30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
+        <div className="absolute inset-0 bg-primary bg-opacity-80"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <motion.div
+            variants={fadeIn}
+            className="text-center text-white max-w-3xl mx-auto"
+          >
+            <h1 className="font-poppins font-bold text-4xl md:text-5xl mb-6">Contact Us</h1>
+            <p className="font-montserrat text-lg md:text-xl mb-8">
+              Have questions or ready to schedule service? Reach out to our team for prompt assistance and expert advice.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      <section id="contact" className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row gap-12">
+            <div className="lg:w-1/2">
+              <ContactForm />
+            </div>
+            
+            <div className="lg:w-1/2">
+              <ContactInfo />
+            </div>
+          </div>
+        </div>
+      </section>
+    </motion.div>
+  );
+};
+
+export default Contact;
