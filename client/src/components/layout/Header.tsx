@@ -137,17 +137,16 @@ const Header = () => {
 
             {/* Mobile Menu */}
             <div className="md:hidden flex items-center">
-              <Link href="/contact" className="mr-4">
-                <Button 
-                  size="sm" 
-                  variant="ghost"
-                  className={`p-2 h-auto ${
-                    isScrolled ? "text-[#FF6B6B]" : "text-white"
-                  }`}
-                >
-                  <PhoneCall className="h-5 w-5" />
-                </Button>
-              </Link>
+              <Button 
+                size="sm" 
+                variant="ghost"
+                className={`p-2 h-auto mr-4 ${
+                  isScrolled ? "text-[#FF6B6B]" : "text-white"
+                }`}
+                onClick={() => window.location.href = '/contact'}
+              >
+                <PhoneCall className="h-5 w-5" />
+              </Button>
               
               <Sheet>
                 <SheetTrigger asChild>
@@ -211,11 +210,12 @@ const Header = () => {
                       </div>
                       
                       <div className="px-4 pt-2">
-                        <Link href="/contact">
-                          <Button className="w-full bg-[#FF6B6B] hover:bg-primary text-white">
-                            Book Service
-                          </Button>
-                        </Link>
+                        <Button 
+                          className="w-full bg-[#FF6B6B] hover:bg-primary text-white"
+                          onClick={() => window.location.href = '/contact'}
+                        >
+                          Book Service
+                        </Button>
                       </div>
                     </div>
                   </div>
