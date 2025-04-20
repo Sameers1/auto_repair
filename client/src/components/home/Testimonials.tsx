@@ -98,7 +98,7 @@ const Testimonials = () => {
               align: "start",
               loop: true,
             }}
-            onSelect={(index) => setActiveIndex(index)}
+            // Use the dots for navigation instead of carousel events
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
