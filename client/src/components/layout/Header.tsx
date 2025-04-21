@@ -126,12 +126,12 @@ const Header = () => {
               {/* CTA Button */}
               <Button 
                 size="sm" 
-                className={`font-poppins bg-[#FF6B6B] hover:bg-[#ff5252] text-white shadow-md transform transition duration-300 hover:scale-105 ${
-                  isScrolled ? "" : "border border-white"
+                className={`font-poppins bg-gradient-to-r from-[#1E3D59] to-[#2A5277] hover:from-[#2A5277] hover:to-[#1E3D59] text-white hover:text-white shadow-lg transform transition-all duration-300 hover:-translate-y-0.5 rounded-md ${
+                  isScrolled ? "" : "border border-white/20"
                 }`}
                 onClick={() => window.location.href = '/contact'}
               >
-                Book Service
+                <span className="px-1">Schedule Service</span>
               </Button>
             </nav>
 
@@ -211,10 +211,10 @@ const Header = () => {
                       
                       <div className="px-4 pt-2">
                         <Button 
-                          className="w-full bg-[#FF6B6B] hover:bg-primary text-white"
+                          className="w-full bg-gradient-to-r from-[#1E3D59] to-[#2A5277] hover:from-[#2A5277] hover:to-[#1E3D59] text-white hover:text-white shadow-lg py-2.5 rounded-md transition-all duration-300"
                           onClick={() => window.location.href = '/contact'}
                         >
-                          Book Service
+                          Schedule Service
                         </Button>
                       </div>
                     </div>

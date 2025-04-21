@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
       <div 
         className="absolute inset-0 bg-primary bg-opacity-85 z-0" 
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1625047509252-6ae49b42fe3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('https://cdn.pixabay.com/photo/2017/10/27/10/27/auto-2893872_1280.jpg')",
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

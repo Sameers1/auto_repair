@@ -3,7 +3,7 @@ export const services = [
     id: "engine",
     title: "Engine Diagnostics & Repair",
     description: "Advanced computer diagnostics and precision repairs for all engine types.",
-    imageUrl: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/Engine-Diagnostic.webp",
     category: "repair",
     includes: [
       "Computer diagnostics",
@@ -17,7 +17,7 @@ export const services = [
     id: "brake",
     title: "Brake System Service",
     description: "Complete brake inspection, repair, and replacement for optimal safety.",
-    imageUrl: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/Break-Servce.jpg",
     category: "maintenance",
     includes: [
       "Brake pad replacement",
@@ -31,7 +31,7 @@ export const services = [
     id: "transmission",
     title: "Transmission Service",
     description: "Expert transmission diagnostics, fluid exchange, and comprehensive repairs.",
-    imageUrl: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/transmission-servicxe.jpg",
     category: "repair",
     includes: [
       "Transmission fluid exchange",
@@ -45,7 +45,7 @@ export const services = [
     id: "electrical",
     title: "Electrical Systems",
     description: "Comprehensive diagnosis and repair of all vehicle electrical components.",
-    imageUrl: "https://images.unsplash.com/photo-1635770310132-698b2743acb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/electrical-systems.jpg",
     category: "diagnostics",
     includes: [
       "Battery testing and replacement",
@@ -59,7 +59,7 @@ export const services = [
     id: "ac",
     title: "Air Conditioning Service",
     description: "Complete A/C diagnostics, repair, and recharge for optimal climate control.",
-    imageUrl: "https://images.unsplash.com/photo-1632823471565-1ecf94f1a6f0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/Ac-service.webp",
     category: "maintenance",
     includes: [
       "A/C system inspection",
@@ -73,7 +73,7 @@ export const services = [
     id: "alignment",
     title: "Wheel Alignment",
     description: "Precision wheel alignment services to ensure optimal handling and tire longevity.",
-    imageUrl: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/wheel-alignment.jpg",
     category: "maintenance",
     includes: [
       "4-wheel computerized alignment",
@@ -87,7 +87,7 @@ export const services = [
     id: "oil-change",
     title: "Oil Change & Fluid Services",
     description: "Professional oil changes and comprehensive fluid services to keep your vehicle running smoothly.",
-    imageUrl: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/Engine-Diagnostic.webp",
     category: "maintenance",
     includes: [
       "Synthetic oil options",
@@ -101,7 +101,7 @@ export const services = [
     id: "suspension",
     title: "Suspension & Steering",
     description: "Expert suspension and steering repairs to improve handling, comfort, and safety.",
-    imageUrl: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/wheel-alignment.jpg",
     category: "repair",
     includes: [
       "Shock and strut replacement",
@@ -115,7 +115,7 @@ export const services = [
     id: "computer-diagnostics",
     title: "Computer Diagnostics",
     description: "Advanced computer diagnostics to accurately identify and resolve complex vehicle issues.",
-    imageUrl: "https://images.unsplash.com/photo-1581093458791-9604a6454fdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/Images/Engine-Diagnostic.webp",
     category: "diagnostics",
     includes: [
       "Check engine light diagnosis",

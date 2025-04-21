@@ -25,7 +25,7 @@ const AboutSection = () => {
             className="lg:w-1/2"
           >
             <img 
-              src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+              src="https://cdn.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg" 
               alt="Our Professional Team" 
               className="rounded-lg shadow-xl w-full h-auto"
             />

@@ -10,7 +10,7 @@ const CTASection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20 z-0"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1507977800431-463814dada3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('https://cdn.pixabay.com/photo/2018/01/17/20/11/auto-3088838_1280.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -81,7 +81,7 @@ const About = () => {
       <section 
         className="relative pt-32 pb-16 md:pt-40 md:pb-24"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1613214474010-24952b6de52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
@@ -108,7 +108,7 @@ const About = () => {
               className="lg:w-1/2"
             >
               <img 
-                src="https://images.unsplash.com/photo-1624008915317-cb3ad69b16ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src="https://cdn.pixabay.com/photo/2015/07/11/14/53/garage-840835_1280.jpg" 
                 alt="AutoElite Shop" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />

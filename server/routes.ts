@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertContactFormSchema } from "@shared/schema";
 import { z } from "zod";
 import { ZodError } from "zod";
+import { emailService } from "./emailService";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Handle contact form submissions
@@ -18,10 +19,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Save the form data
       const savedForm = await storage.saveContactForm(validatedData);
       
+      // Send email notification
+      const emailSent = await emailService.sendContactFormNotification(validatedData);
+      
       res.status(201).json({
         success: true,
         message: "Your message has been sent successfully!",
-        data: savedForm
+        data: savedForm,
+        emailStatus: emailSent ? "Email notification sent" : "Email notification failed"
       });
     } catch (error) {
       if (error instanceof ZodError) {

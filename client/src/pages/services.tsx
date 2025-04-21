@@ -32,7 +32,7 @@ const Services = () => {
       <section 
         className="relative pt-32 pb-16 md:pt-40 md:pb-24"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1596516109370-29001ec8ec36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('https://cdn.pixabay.com/photo/2020/04/19/11/50/repair-5063098_1280.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
@@ -50,6 +50,18 @@ const Services = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Decorative separator line */}
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-gray-200"></div>
+        </div>
+        <div className="relative flex justify-center">
+          <div className="bg-[#1E3D59] text-white px-4 py-1 rounded-full text-sm font-medium">
+            Our Services
+          </div>
+        </div>
+      </div>
 
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
@@ -109,7 +121,7 @@ const Services = () => {
                           </div>
                           <div className="mt-auto">
                             <Link href="/contact">
-                              <Button className="w-full bg-[#FF6B6B] hover:bg-opacity-90 text-white">
+                              <Button className="w-full bg-white hover:bg-gray-50 text-[#1E3D59] border border-[#1E3D59] font-medium">
                                 Schedule Service
                               </Button>
                             </Link>

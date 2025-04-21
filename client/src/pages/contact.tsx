@@ -14,7 +14,7 @@ const Contact = () => {
       <section 
         className="relative pt-32 pb-16 md:pt-40 md:pb-24"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1612831455175-e57c06bb0c30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')",
+          backgroundImage: "url('https://cdn.pixabay.com/photo/2016/11/23/13/42/auto-1852235_1280.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}

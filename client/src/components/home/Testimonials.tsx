@@ -90,68 +90,74 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
+          className="max-w-7xl mx-auto"
         >
           <Carousel 
             ref={carouselRef}
             className="relative"
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
             // Use the dots for navigation instead of carousel events
           >
-            <CarouselContent>
+            <CarouselContent className="mx-auto">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem 
                   key={testimonial.id} 
-                  className="sm:basis-full md:basis-1/2 lg:basis-1/3 pl-4"
+                  className="sm:basis-full md:basis-1/2 lg:basis-1/3 px-4"
                 >
-                  <Card className="bg-white p-8 rounded-xl shadow-xl border-none h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
-                    <CardContent className="p-0">
-                      {/* Quote icon with background */}
-                      <div className="absolute -top-5 -right-5 bg-[#FF6B6B] text-white p-3 rounded-full shadow-lg">
-                        <Quote className="h-5 w-5" />
-                      </div>
-                      
-                      {/* Rating stars */}
-                      <div className="flex items-center mb-4 mt-2">
-                        <div className="text-[#FF6B6B] flex">
-                          {[...Array(5)].map((_, i) => (
-                            <Star
-                              key={i}
-                              className="h-5 w-5 fill-current"
-                              fill={i < testimonial.rating ? "currentColor" : "none"}
-                              strokeWidth={i < testimonial.rating ? 0 : 1.5}
+                  <div className="h-full flex">
+                    <Card className="bg-white p-5 pt-6 rounded-3xl shadow-none border border-gray-100 h-full transition-all duration-300 hover:border-[#FF6B6B]/10 flex-1 drop-shadow-sm hover:drop-shadow-md transform hover:-translate-y-1">
+                      <CardContent className="p-0 relative">
+                        {/* Quote icon with background */}
+                        <div className="absolute -top-3 -right-3 bg-[#FF6B6B] text-white p-2 rounded-full drop-shadow-sm flex items-center justify-center w-7 h-7">
+                          <Quote className="h-3.5 w-3.5" />
+                        </div>
+                        
+                        {/* Rating stars */}
+                        <div className="flex items-center mb-4 mt-3">
+                          <div className="flex bg-gray-50 rounded-full px-3 py-1.5">
+                            {[...Array(5)].map((_, i) => (
+                              <Star
+                                key={i}
+                                className="h-3.5 w-3.5 fill-current text-[#FF6B6B] mr-0.5"
+                                strokeWidth={0}
+                              />
+                            ))}
+                          </div>
+                        </div>
+                        
+                        {/* Testimonial text */}
+                        <p className="font-montserrat text-gray-700 mb-5 leading-relaxed italic text-sm md:text-base min-h-[100px] relative pl-2">
+                          <span className="absolute -left-1 -top-2 text-[#FF6B6B] text-2xl font-serif">"</span>
+                          {testimonial.text}
+                          <span className="text-[#FF6B6B] text-2xl font-serif">"</span>
+                        </p>
+                        
+                        {/* Customer info */}
+                        <div className="flex items-center pt-3 mt-2 border-t border-gray-100">
+                          <div className="bg-primary bg-opacity-5 rounded-full w-14 h-14 flex-shrink-0 overflow-hidden p-0.5 border border-[#FF6B6B]/10">
+                            <img 
+                              src={testimonial.avatar} 
+                              alt={testimonial.name} 
+                              className="w-full h-full object-cover rounded-full"
                             />
-                          ))}
+                          </div>
+                          <div className="ml-3">
+                            <h4 className="font-poppins font-medium text-primary text-sm">{testimonial.name}</h4>
+                            <p className="font-montserrat text-xs text-[#FF6B6B]">{testimonial.carInfo}</p>
+                          </div>
                         </div>
-                      </div>
-                      
-                      {/* Testimonial text */}
-                      <p className="font-montserrat text-gray-700 mb-6 leading-relaxed italic">"{testimonial.text}"</p>
-                      
-                      {/* Customer info */}
-                      <div className="flex items-center pt-4 border-t border-gray-100">
-                        <div className="bg-primary bg-opacity-10 rounded-full w-14 h-14 flex-shrink-0 overflow-hidden p-1">
-                          <img 
-                            src={testimonial.avatar} 
-                            alt={testimonial.name} 
-                            className="w-full h-full object-cover rounded-full"
-                          />
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="font-poppins font-medium text-primary">{testimonial.name}</h4>
-                          <p className="font-montserrat text-sm text-[#FF6B6B]">{testimonial.carInfo}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="absolute top-1/2 -left-4 md:left-2 z-10 bg-white text-primary hover:bg-[#FF6B6B] hover:text-white transition-colors duration-300" />
-            <CarouselNext className="absolute top-1/2 -right-4 md:right-2 z-10 bg-white text-primary hover:bg-[#FF6B6B] hover:text-white transition-colors duration-300" />
+            <CarouselPrevious className="absolute top-1/2 -left-6 md:-left-3 z-10 bg-white text-primary hover:bg-[#FF6B6B] hover:text-white transition-colors duration-300" />
+            <CarouselNext className="absolute top-1/2 -right-6 md:-right-3 z-10 bg-white text-primary hover:bg-[#FF6B6B] hover:text-white transition-colors duration-300" />
           </Carousel>
         </motion.div>
         

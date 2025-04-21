@@ -20,7 +20,7 @@ const ServiceHighlights = () => {
             whileInView={{ width: "80px" }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="h-1 bg-[#FF6B6B] mx-auto mb-4"
+            className="h-1 bg-black mx-auto mb-4"
           ></motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const ServiceHighlights = () => {
             whileInView={{ width: "80px" }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="h-1 bg-[#FF6B6B] mx-auto mt-4"
+            className="h-1 bg-black mx-auto mt-4"
           ></motion.div>
         </div>
         
@@ -82,14 +82,14 @@ const ServiceHighlights = () => {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-4 right-4 bg-[#FF6B6B] text-white px-3 py-1 rounded-full text-xs font-poppins">
+                  <div className="absolute top-4 right-4 bg-black text-white px-3 py-1 rounded-full text-xs font-poppins">
                     {service.category}
                   </div>
                 </div>
                 <CardContent className="p-6 bg-white">
                   <motion.h3 
                     variants={{
-                      hover: { color: "#FF6B6B" }
+                      hover: { color: "#000000" }
                     }}
                     className="font-poppins font-semibold text-xl text-primary mb-3 transition-colors duration-300"
                   >
@@ -101,7 +101,7 @@ const ServiceHighlights = () => {
                     <ul className="space-y-2">
                       {service.includes.slice(0, 2).map((item, i) => (
                         <li key={i} className="flex items-start">
-                          <BadgeCheck className="mr-2 h-5 w-5 text-[#4CAF50] flex-shrink-0 mt-0.5" />
+                          <BadgeCheck className="mr-2 h-5 w-5 text-black flex-shrink-0 mt-0.5" />
                           <span className="font-montserrat text-sm text-gray-600">{item}</span>
                         </li>
                       ))}
@@ -113,7 +113,7 @@ const ServiceHighlights = () => {
                       variants={{
                         hover: { x: 5 }
                       }}
-                      className="font-poppins inline-flex items-center text-[#FF6B6B] hover:text-primary transition-colors duration-300"
+                      className="font-poppins inline-flex items-center text-black hover:text-gray-700 transition-colors duration-300"
                     >
                       Explore Service <ArrowRight className="ml-2 h-4 w-4" />
                     </motion.div>
@@ -135,7 +135,7 @@ const ServiceHighlights = () => {
           <Link href="/services">
             <Button 
               size="lg"
-              className="font-poppins bg-primary hover:bg-[#FF6B6B] text-white py-3 px-8 rounded-md shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="font-poppins bg-black hover:bg-gray-800 text-white py-3 px-8 rounded-md shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               View All Services
             </Button>
@@ -151,7 +151,7 @@ const ServiceHighlights = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 py-6 px-8 bg-gradient-to-r from-primary to-[#1a355d] rounded-lg shadow-lg text-white"
+          className="mt-16 py-6 px-8 bg-gradient-to-r from-black to-gray-800 rounded-lg shadow-lg text-white"
         >
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
@@ -161,7 +161,7 @@ const ServiceHighlights = () => {
             <Link href="/contact">
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-white text-white hover:bg-white hover:text-black"
               >
                 Schedule Service
               </Button>
