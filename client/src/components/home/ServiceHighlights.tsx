@@ -158,14 +158,6 @@ const ServiceHighlights = () => {
               <h3 className="font-poppins font-semibold text-xl mb-2">100% Satisfaction Guaranteed</h3>
               <p className="font-montserrat text-white/80">All repairs backed by our industry-leading warranty</p>
             </div>
-            <Link href="/contact">
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-black"
-              >
-                Schedule Service
-              </Button>
-            </Link>
           </div>
         </motion.div>
       </div>
