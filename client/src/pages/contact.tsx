@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { pageTransition, fadeIn, slideUp } from "@/lib/animations";
-import ContactForm from "@/components/contact/ContactForm";
+import { pageTransition, fadeIn } from "@/lib/animations";
 import ContactInfo from "@/components/contact/ContactInfo";
 
 const Contact = () => {
@@ -35,14 +34,8 @@ const Contact = () => {
 
       <section id="contact" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-12">
-            <div className="lg:w-1/2">
-              <ContactForm />
-            </div>
-            
-            <div className="lg:w-1/2">
-              <ContactInfo />
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <ContactInfo />
           </div>
         </div>
       </section>

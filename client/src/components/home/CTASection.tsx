@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { CalendarClock, PhoneCall, Clock, CheckCircle2 } from "lucide-react";
+import { CalendarClock, PhoneCall, Clock, CheckCircle2, Wrench } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -70,18 +70,8 @@ const CTASection = () => {
                   size="lg" 
                   className="font-poppins bg-[#FF6B6B] hover:bg-opacity-90 text-white py-3 px-8 rounded-md shadow-lg text-lg w-full sm:w-auto group"
                 >
-                  <CalendarClock className="mr-2 h-5 w-5 group-hover:animate-pulse" />
-                  Book Appointment
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="font-poppins border-white text-white hover:bg-white hover:text-primary py-3 px-8 rounded-md shadow-lg text-lg w-full sm:w-auto"
-                >
-                  <PhoneCall className="mr-2 h-5 w-5" />
-                  Call Us Now
+                  <PhoneCall className="mr-2 h-5 w-5 group-hover:animate-pulse" />
+                  Call Us
                 </Button>
               </Link>
             </motion.div>
